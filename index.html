@@ -14,10 +14,14 @@
             <div class="logo">FreeSource</div>
             <ul class="menu">
                 <li class="menu_links">
-                    <a href="#Adding" onclick="addBookToLibrary()">Add a book</a>
+                    <a href="#Adding" id="btn">
+                        Adding a book
+                    </a>
                 </li>
                 <li class="menu_links">
-                    <a href="#Removing">Remove a book</a>
+                    <a href="#Removing">
+                        Remove a book
+                    </a>
                 </li>
             </ul>
         </header>
@@ -26,12 +30,39 @@
                 Your Library
             </div>
             <div class="libraryContainer">
-                Library Container
                 <div class="booksDisplayer">
                     <!-- The Grid built in the JS file -->
-                    </div>
                 </div>
             </div>
+            <form id="form" method="get">
+                <ul>
+                    <li>
+                        <label for="book_title"></label>
+                        <input 
+                        type="text" 
+                        id="book_title" 
+                        placeholder="Title" required>
+                    </li>
+                    <li>
+                        <label for="book_author"></label>
+                        <input 
+                        type="text" 
+                        id="book_author" 
+                        placeholder="Author" required>
+                    </li>
+                    <li>
+                        <label for="book_year"></label>
+                        <input type="number" 
+                        id="book_year" 
+                        placeholder="Year" required>
+                    </li>
+                    <button 
+                        id="submit" 
+                        type="submit">
+                        Sign up
+                    </button>
+                </ul>
+            </form>
         </main>
         <footer>
 

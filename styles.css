@@ -82,6 +82,15 @@ main .booksDisplayer{
     font-size: 20px;
     margin-top: auto;
 }
+form{
+    display: none;
+    text-align: center;
+}
+form input, #submit{
+    margin: 10px;
+    padding: 13px;
+    border: 2px solid;
+}
 footer {
 
 }
