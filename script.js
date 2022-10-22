@@ -54,11 +54,15 @@ function addBookToArray() {
      bookYear.value != '')
   {
   myLibrary.push(newBook)
+  form.style.display = 'none';
+    form.reset();
+  }
+  else {
+    alert("There are field missing duuuude...")
   }
   console.table(myLibrary)
   container.innerHTML = displayBooks(myLibrary);
-  form.style.display = 'none';
-  form.reset();
+
+
 }
 bookAdded.addEventListener('click', addBookToArray)
-

@@ -1,50 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul, li, a{
+
+ul,
+li,
+a {
     text-decoration: none;
     list-style-type: none;
 }
-a{
-    color: black ;
+
+a {
+    color: black;
 }
-.wrapper{
+
+.wrapper {
     background-color: blanchedalmond;
     margin: 15px 25px;
     border: 2px solid;
     border-radius: 4px;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 header .logo {
     font-size: 36px;
     margin-left: 30px;
 }
-header .menu{
+
+header .menu {
     display: flex;
     gap: 150px;
     margin-right: 50px;
 }
+
 main {
     background-color: rgb(207, 204, 200);
     margin: 15px 25px;
     border: 2px solid;
     border-radius: 4px;
 }
-main .title{
+
+main .title {
     text-align: center;
     font-size: 25px;
     font-style: italic;
     text-decoration: underline;
 }
-main .libraryContainer{
+
+main .libraryContainer {
     background-color: rgb(37, 127, 196);
     margin: 20px 70px;
     border: 2px solid;
@@ -53,13 +64,15 @@ main .libraryContainer{
     flex-direction: column;
     align-items: center;
 }
-main .booksDisplayer{
+
+main .booksDisplayer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     column-gap: 8rem;
     row-gap: 3rem;
 }
+
 .book {
     display: flex;
     flex-direction: column;
@@ -68,6 +81,7 @@ main .booksDisplayer{
     padding: 1rem;
     margin: 20px;
 }
+
 .book .bookTitle {
     max-width: 15rem;
     font-size: 25px;
@@ -76,21 +90,22 @@ main .booksDisplayer{
     text-align: center;
     margin-bottom: 20px;
 }
-.description{
+
+.description {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     margin-top: auto;
 }
-form{
+
+form {
     display: none;
     text-align: center;
 }
-form input, #submit{
+
+form input,
+#submit {
     margin: 10px;
     padding: 13px;
     border: 2px solid;
-}
-footer {
-
 }
